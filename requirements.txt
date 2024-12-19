@@ -1,0 +1,10 @@
+streamlit
+pandas
+plotly
+joblib
+numpy
+openpyxl
+scikit-learn==1.3.2
+xlsxwriter
+streamlit_option_menu
+matplotlib
