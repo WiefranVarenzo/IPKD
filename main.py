@@ -6,8 +6,6 @@ import perhitungan_ipkd
 import grafik_ipkd
 
 st.set_page_config(page_title="Aplikasi IPKD", page_icon="📈")
-
-# Background styling
 page_bg = """
 <style>
     [data-testid="stAppViewContainer"], [data-testid="stToolbar"], [data-testid="stHeader"] {
@@ -38,10 +36,8 @@ st.markdown(page_bg, unsafe_allow_html=True)
 with st.sidebar:
     app = option_menu(
         menu_title="Halaman",
-        # options=['Welcome', 'Visualisasi Data', 'Perhitungan IPKD', 'Menghitung Permutation Importance', 'Prediksi IPKD'],
         options=['Welcome', 'Visualisasi Data', 'Perhitungan IPKD', 'Grafik IPKD'],
         menu_icon='file-earmark',
-        # icons=['house', 'bar-chart', 'coin', 'graph-up', 'view-list'],
         icons=['house', 'bar-chart', 'coin', 'graph-up'],
         styles={
             "container": {"padding": "5!important", "background-color": "#B17457"},
@@ -51,8 +47,6 @@ with st.sidebar:
             "menu-title": {"color": "white", "font-size": "24px"}
         }
     )
-
-# Navigasi halaman berdasarkan pilihan di sidebar
 if app == 'Welcome':
     welcome.app()
 elif app == 'Visualisasi Data':
